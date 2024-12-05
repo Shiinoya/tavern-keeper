@@ -2,7 +2,6 @@ using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class EnemyController : MonoBehaviour
 {
@@ -10,15 +9,9 @@ public class EnemyController : MonoBehaviour
 
     public float enRange = 3;
 
-    public float attackRange;
-    public float attackRate;
-    public float attackDamge = 1;
-
-    private float attackCooldown;
-
     void Start()
     {
-        FindObjectOfType<LevelManager>().enemyList.Add(gameObject);
+        
     }
 
     void Update()
@@ -36,32 +29,12 @@ public class EnemyController : MonoBehaviour
         {
             GetComponent<AIDestinationSetter>().target = null;
         }
-
-        if (currentTarget != null)
-        {
-            float dist = (currentTarget.transform.position - transform.position).magnitude;
-
-            if (dist < attackRange && attackCooldown <= 0)
-            {
-                AttackTarget();
-                attackCooldown = attackRate;
-            }
-        }
-
-        if (attackCooldown > 0)
-        {
-            attackCooldown -= 1 * Time.deltaTime;
-        }
+        
     }
 
     private void OnDestroy()
     {
         FindObjectOfType<LevelManager>().enemyList.Remove(gameObject);
-    }
-
-    public void AttackTarget()
-    {
-        currentTarget.GetComponent<HitPointManager>().EffectHealth(attackDamge);
     }
 
     public void FindTarget()

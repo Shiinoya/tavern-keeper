@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 4559789143009916929}
   - component: {fileID: 939527010791089051}
   - component: {fileID: 2725548864751985931}
-  - component: {fileID: -2724252010489098703}
-  - component: {fileID: 4003895390115139558}
   m_Layer: 0
   m_Name: NPC_Adv
   m_TagString: Untagged
@@ -135,7 +133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a7eebf1dd4ae5e48ae7e87dd8605450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcAttack: {fileID: 11400000, guid: 2bd466763f999354c8e7a51148f3c5b6, type: 2}
+  attackRange: 2
+  attackRate: 1
+  attackDamge: 5
 --- !u!114 &2725548864751985931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,55 +149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTarget: {fileID: 0}
---- !u!114 &-2724252010489098703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4232344030571133523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0be724833722977479015269192a4e8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHP: 25
-  currentHP: 0
---- !u!58 &4003895390115139558
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4232344030571133523}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!1 &4521186331604344308
 GameObject:
   m_ObjectHideFlags: 0
