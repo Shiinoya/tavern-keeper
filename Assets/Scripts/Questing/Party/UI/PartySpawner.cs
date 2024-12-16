@@ -11,6 +11,8 @@ public class PartySpawner : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
     private CanvasGroup canvasGroup;
     private RectTransform rectTransform;
 
+    public NPC_AdventurerAttack npcType;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
