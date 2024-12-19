@@ -75,9 +75,11 @@ public class GameManager : MonoBehaviour
             if (selectedUnit != null)
             {
                 Vector2 mousePosition2D = Camera.ScreenToWorldPoint(mouse.position.ReadValue());
+                selectedUnit.Move(mousePosition2D);
 
                 // TODO : remove log
                 Debug.Log(mousePosition2D);
+
             }
         }
     }

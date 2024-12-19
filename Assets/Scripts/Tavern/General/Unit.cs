@@ -13,4 +13,9 @@ public class Unit : MonoBehaviour
     {
         selectedUnit.SetActive(visible);
     }
+
+    public void Move(Vector2 position)
+    {
+        transform.position = position;
+    }
 }
