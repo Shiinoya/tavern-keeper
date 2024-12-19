@@ -2,14 +2,15 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-    private GameObject selectedGameObject;
+    private GameObject selectedUnit;
     private void Awake()
     {
-        selectedGameObject = transform.Find("Selected").gameObject;
+        selectedUnit = transform.Find("SelectedIndicator").gameObject;
+        selectedUnit.SetActive(false);
     }
 
-    public void SetSelectedVisible(bool visible)
+    public void SetSelected(bool visible)
     {
-        selectedGameObject.SetActive(visible);
+        selectedUnit.SetActive(visible);
     }
 }

@@ -10,6 +10,11 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Camera = Camera.main;
+
+        if (selectedUnit != null)
+        {
+            selectedUnit = null;
+        }
     }
 
     void Update()
@@ -27,9 +32,18 @@ public class GameManager : MonoBehaviour
             {
                 Unit clickedUnit = hit.collider.GetComponent<Unit>();
 
+                // if object is unit
                 if (clickedUnit != null)
                 {
+                    // TODO : too much if() nesting
+                    if (selectedUnit != null)
+                    {
+                        selectedUnit.SetSelected(false);
+
+                    }
+
                     selectedUnit = clickedUnit;
+                    selectedUnit.SetSelected(true);
                     Debug.Log("Object clicked: " + selectedUnit.name);
                 }
             }
@@ -37,12 +51,14 @@ public class GameManager : MonoBehaviour
             // if no object clicked (deselect)
             if (hit.collider == null)
             {
-                Debug.Log("No object clicked");
+                Debug.Log("Deselect");
 
                 if (selectedUnit != null)
                 {
+                    selectedUnit.SetSelected(false);
                     selectedUnit = null;
                 }
+
             }
         }
     }
