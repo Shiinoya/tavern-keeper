@@ -3,7 +3,6 @@ using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
-
     Camera Camera;
     private Unit selectedUnit;
 
@@ -21,7 +20,7 @@ public class GameManager : MonoBehaviour
     {
         Mouse mouse = Mouse.current;
 
-        // if mouse left
+        // if mouse left click
         if (mouse.leftButton.wasPressedThisFrame)
         {
             Vector2 mousePosition2D = Camera.ScreenToWorldPoint(mouse.position.ReadValue());
@@ -43,15 +42,12 @@ public class GameManager : MonoBehaviour
                 {
                     selectedUnit = clickedObject;
                     selectedUnit.SetSelected(true);
-                    Debug.Log("Object clicked: " + selectedUnit.name);
                 }
             }
 
             // if no object clicked (deselect)
             if (hit.collider == null)
             {
-                Debug.Log("Deselect");
-
                 if (selectedUnit != null)
                 {
                     selectedUnit.SetSelected(false);
@@ -60,5 +56,22 @@ public class GameManager : MonoBehaviour
 
             }
         }
+
+        // if mouse right click
+        if (mouse.rightButton.wasPressedThisFrame)
+        {
+            if (selectedUnit == null)
+            {
+                return;
+            }
+
+            if (selectedUnit != null)
+            {
+                Vector2 mousePosition2D = Camera.ScreenToWorldPoint(mouse.position.ReadValue());
+                selectedUnit.Move(mousePosition2D);
+            }
+        }
     }
+
+
 }
