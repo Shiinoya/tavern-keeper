@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
 
     Camera Camera;
-    public Unit ActiveUnit;
+    private Unit selectedUnit;
 
     void Start()
     {
@@ -20,22 +20,29 @@ public class GameManager : MonoBehaviour
         if (mouse.leftButton.wasPressedThisFrame)
         {
             Vector2 mousePosition2D = Camera.ScreenToWorldPoint(mouse.position.ReadValue());
-
             RaycastHit2D hit = Physics2D.Raycast(mousePosition2D, Vector2.zero);
 
             // if object clicked (select)
             if (hit.collider != null)
             {
-                GameObject clickedObject = hit.collider.gameObject;
-                Debug.Log("Object clicked: " + clickedObject.name);
-                // TODO : select object
+                Unit clickedUnit = hit.collider.GetComponent<Unit>();
+
+                if (clickedUnit != null)
+                {
+                    selectedUnit = clickedUnit;
+                    Debug.Log("Object clicked: " + selectedUnit.name);
+                }
             }
 
             // if no object clicked (deselect)
-            if (hit.collider != null)
+            if (hit.collider == null)
             {
                 Debug.Log("No object clicked");
-                // TODO : deselect object
+
+                if (selectedUnit != null)
+                {
+                    selectedUnit = null;
+                }
             }
         }
     }
