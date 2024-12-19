@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,8 +7,6 @@ public class GameManager : MonoBehaviour
     Camera Camera;
     public Unit ActiveUnit;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         Camera = Camera.main;
@@ -28,9 +23,9 @@ public class GameManager : MonoBehaviour
 
             RaycastHit2D hit = Physics2D.Raycast(mousePosition2D, Vector2.zero);
 
+            // if clicked object
             if (hit.collider != null)
             {
-                // clicked object
                 GameObject clickedObject = hit.collider.gameObject;
                 Debug.Log("You clicked on: " + clickedObject.name);
             }
