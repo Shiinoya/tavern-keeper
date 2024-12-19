@@ -42,17 +42,12 @@ public class GameManager : MonoBehaviour
                 {
                     selectedUnit = clickedObject;
                     selectedUnit.SetSelected(true);
-                    // TODO : remove log
-                    Debug.Log("Object clicked: " + selectedUnit.name);
                 }
             }
 
             // if no object clicked (deselect)
             if (hit.collider == null)
             {
-                // TODO : remove log
-                Debug.Log("Deselect");
-
                 if (selectedUnit != null)
                 {
                     selectedUnit.SetSelected(false);
@@ -67,8 +62,6 @@ public class GameManager : MonoBehaviour
         {
             if (selectedUnit == null)
             {
-                // TODO : remove log
-                Debug.Log("No unit selected");
                 return;
             }
 
@@ -76,10 +69,6 @@ public class GameManager : MonoBehaviour
             {
                 Vector2 mousePosition2D = Camera.ScreenToWorldPoint(mouse.position.ReadValue());
                 selectedUnit.Move(mousePosition2D);
-
-                // TODO : remove log
-                Debug.Log(mousePosition2D);
-
             }
         }
     }

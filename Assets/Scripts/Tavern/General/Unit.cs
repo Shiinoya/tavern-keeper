@@ -3,7 +3,8 @@ using UnityEngine;
 public class Unit : MonoBehaviour
 {
     private GameObject selectedUnit;
-    
+    public bool isMovable = false;
+
     private Vector2 targetPosition;
     private bool isMoving = false;
     private readonly float moveSpeed = 8f;
@@ -34,7 +35,10 @@ public class Unit : MonoBehaviour
 
     public void Move(Vector2 position)
     {
-        targetPosition = position;
-        isMoving = true;
+        if (isMovable)
+        {
+            targetPosition = position;
+            isMoving = true;
+        }
     }
 }
