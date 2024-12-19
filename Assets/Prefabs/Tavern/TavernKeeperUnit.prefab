@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 197535331804070881}
   - component: {fileID: 2887168566091504684}
   m_Layer: 0
-  m_Name: TavernKeeper
+  m_Name: TavernKeeperUnit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

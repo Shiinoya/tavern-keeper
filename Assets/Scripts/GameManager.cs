@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
             if (hit.collider != null)
             {
                 GameObject clickedObject = hit.collider.gameObject;
-                Debug.Log("You clicked on: " + clickedObject.name);
+                Debug.Log("Clicked: " + clickedObject.name);
             }
         }
     }
