@@ -30,19 +30,18 @@ public class GameManager : MonoBehaviour
             // if object clicked (select)
             if (hit.collider != null)
             {
-                Unit clickedUnit = hit.collider.GetComponent<Unit>();
+                Unit clickedObject = hit.collider.GetComponent<Unit>();
 
-                // if object is unit
-                if (clickedUnit != null)
+                // if object is Unit: clear previously selected Unit if it exists
+                if (clickedObject != null && selectedUnit != null)
                 {
-                    // TODO : too much if() nesting
-                    if (selectedUnit != null)
-                    {
-                        selectedUnit.SetSelected(false);
+                    selectedUnit.SetSelected(false);
+                }
 
-                    }
-
-                    selectedUnit = clickedUnit;
+                // if object is Unit: select new Unit
+                if (clickedObject != null)
+                {
+                    selectedUnit = clickedObject;
                     selectedUnit.SetSelected(true);
                     Debug.Log("Object clicked: " + selectedUnit.name);
                 }
