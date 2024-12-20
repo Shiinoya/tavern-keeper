@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a7eebf1dd4ae5e48ae7e87dd8605450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcAttack: {fileID: 11400000, guid: 276532ec5c4e85342ac4ab3700eaac67, type: 2}
+  npcAttack: {fileID: 11400000, guid: 2bd466763f999354c8e7a51148f3c5b6, type: 2}
 --- !u!114 &2725548864751985931
 MonoBehaviour:
   m_ObjectHideFlags: 0
