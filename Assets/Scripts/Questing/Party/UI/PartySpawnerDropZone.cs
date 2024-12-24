@@ -14,6 +14,8 @@ public class PartySpawnerDropZone : MonoBehaviour, IDropHandler
             Debug.Log("SpawnNPC");
             GameObject spawn = Instantiate(spawnNPC);
 
+            
+
             Vector2 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             spawn.transform.position = spawnPosition;
             spawn.GetComponent<NPC_AdventurerController>().npcAttack = eventData.pointerDrag.GetComponent<PartySpawner>().npcType;

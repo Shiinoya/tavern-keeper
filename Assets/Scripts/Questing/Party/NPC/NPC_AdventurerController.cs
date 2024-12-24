@@ -15,6 +15,7 @@ public class NPC_AdventurerController : MonoBehaviour
         npcAttack.aTarget = aTarget;
         npcAttack.thisAdventurer = gameObject;
         npcAttack.StartAttack();
+        gameObject.GetComponentInChildren<SpriteRenderer>().color = npcAttack.aColor;
     }
 
     private void Update()

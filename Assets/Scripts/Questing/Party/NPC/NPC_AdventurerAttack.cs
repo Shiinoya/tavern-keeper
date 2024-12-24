@@ -6,6 +6,7 @@ public abstract class NPC_AdventurerAttack : ScriptableObject
 {
     public NPC_AdventurerTargeting aTarget;
     public GameObject thisAdventurer;
+    public Color aColor;
 
     public abstract void StartAttack();
 

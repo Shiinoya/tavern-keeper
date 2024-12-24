@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PartySpawner : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
@@ -19,8 +20,14 @@ public class PartySpawner : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
+    private void Start()
+    {
+        GetComponent<Image>().color = npcType.aColor;
+    }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
+        canvas = FindObjectOfType<Canvas>();
         canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;
     }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -71,6 +72,11 @@ public class GameManager : MonoBehaviour
                 selectedUnit.Move(mousePosition2D);
             }
         }
+    }
+
+    public void QuestScene()
+    {
+        SceneManager.LoadScene(1);
     }
 
 
