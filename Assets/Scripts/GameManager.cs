@@ -19,12 +19,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Mouse mouse = Mouse.current;
 
         // if mouse left click
-        if (mouse.leftButton.wasPressedThisFrame)
+        if (Input.GetMouseButtonDown(0))
         {
-            Vector2 mousePosition2D = Camera.ScreenToWorldPoint(mouse.position.ReadValue());
+            Vector2 mousePosition2D = Camera.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(mousePosition2D, Vector2.zero);
 
             // if object clicked (select)
@@ -59,7 +58,7 @@ public class GameManager : MonoBehaviour
         }
 
         // if mouse right click
-        if (mouse.rightButton.wasPressedThisFrame)
+        if (Input.GetMouseButtonDown(1))
         {
             if (selectedUnit == null)
             {
@@ -68,7 +67,7 @@ public class GameManager : MonoBehaviour
 
             if (selectedUnit != null)
             {
-                Vector2 mousePosition2D = Camera.ScreenToWorldPoint(mouse.position.ReadValue());
+                Vector2 mousePosition2D = Camera.ScreenToWorldPoint(Input.mousePosition);
                 selectedUnit.Move(mousePosition2D);
             }
         }

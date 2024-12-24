@@ -15,7 +15,7 @@ MonoBehaviour:
   aTarget: {fileID: 0}
   thisAdventurer: {fileID: 0}
   aColor: {r: 0.79751563, g: 0.4950605, b: 0.8396226, a: 1}
-  attackRange: 1
+  attackRange: 1.75
   attackRate: 2
   attackDamge: 2
   healAmount: 3

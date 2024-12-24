@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -11,15 +12,22 @@ public class LevelManager : MonoBehaviour
 
     public List<GameObject> partyList = new List<GameObject>();
 
-    private PartyManager partyManager;
+    public Animator uiAni;
 
     public GameObject partySpawner;
     public GameObject partySlot;
     public GameObject slotSection;
 
+    private PartyManager partyManager;
+
     private void Start()
     {
         partyManager = FindObjectOfType<PartyManager>();
+
+        if(partyManager.storedLevel != null)
+            Instantiate(partyManager.storedLevel);
+
+        FindObjectOfType<AstarPath>().Scan();
 
         for (int i = 0; i < partyManager.partyList.Length; i++)
         {
@@ -39,6 +47,7 @@ public class LevelManager : MonoBehaviour
         if (enemyList.Count <= 0 && treasureList.Count <= 0)
         {
             Debug.Log("Complete");
+            uiAni.SetBool("LevelComplete", true);
         }
     }
 }
