@@ -23,4 +23,9 @@ public class NPC_AdventurerController : MonoBehaviour
         npcAttack.UpdateAttack();
     }
 
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelManager>().partyList.Remove(gameObject);
+    }
+
 }

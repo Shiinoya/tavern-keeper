@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partyList:
-  - {fileID: 11400000, guid: 2bd466763f999354c8e7a51148f3c5b6, type: 2}
+  - {fileID: 11400000, guid: 44cdc45d0b40317448bc20109bcc8b9c, type: 2}
   - {fileID: 11400000, guid: 2bd466763f999354c8e7a51148f3c5b6, type: 2}
   - {fileID: 11400000, guid: 276532ec5c4e85342ac4ab3700eaac67, type: 2}
   - {fileID: 0}

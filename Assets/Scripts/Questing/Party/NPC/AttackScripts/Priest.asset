@@ -9,14 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1fbe48ab55da2640b25ba96c1ee05b3, type: 3}
-  m_Name: Archer
+  m_Script: {fileID: 11500000, guid: dddc6c4465daab74aa7521d9701443e3, type: 3}
+  m_Name: Priest
   m_EditorClassIdentifier: 
   aTarget: {fileID: 0}
   thisAdventurer: {fileID: 0}
-  aColor: {r: 0.45979813, g: 0.6603774, b: 0.3582236, a: 1}
-  attackRange: 4
-  attackRate: 1
+  aColor: {r: 0.79751563, g: 0.4950605, b: 0.8396226, a: 1}
+  attackRange: 1
+  attackRate: 2
   attackDamge: 2
-  fleeRange: 2
-  fleeSpeed: 1
+  healAmount: 3
+  healRate: 4
+  healRange: 3

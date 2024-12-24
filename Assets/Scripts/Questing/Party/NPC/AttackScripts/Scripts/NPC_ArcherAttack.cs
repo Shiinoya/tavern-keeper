@@ -1,6 +1,7 @@
 using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
@@ -69,6 +70,6 @@ public class NPC_ArcherAttack : NPC_AdventurerAttack
 
     public void AttackTarget()
     {
-        aTarget.currentTarget.GetComponent<HitPointManager>().currentHP -= attackDamge;
+        aTarget.currentTarget.GetComponent<HitPointManager>().EffectHealth(attackDamge);
     }
 }

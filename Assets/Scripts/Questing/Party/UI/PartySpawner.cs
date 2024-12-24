@@ -12,6 +12,8 @@ public class PartySpawner : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
     private CanvasGroup canvasGroup;
     private RectTransform rectTransform;
 
+    public RectTransform startRect;
+
     public NPC_AdventurerAttack npcType;
 
     private void Awake()
@@ -23,6 +25,7 @@ public class PartySpawner : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
     private void Start()
     {
         GetComponent<Image>().color = npcType.aColor;
+        npcType = Instantiate(npcType);
     }
 
     public void OnBeginDrag(PointerEventData eventData)

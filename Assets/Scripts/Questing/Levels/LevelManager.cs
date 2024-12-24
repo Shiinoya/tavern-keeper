@@ -25,10 +25,10 @@ public class LevelManager : MonoBehaviour
         {
             if (partyManager.partyList[i] != null)
             {
-                GameObject slotSpawn = Instantiate(partySlot);
-                GameObject partySpawn = Instantiate(partySpawner, slotSection.transform);
+                GameObject slotSpawn = Instantiate(partySlot, slotSection.transform);
+                GameObject partySpawn = Instantiate(partySpawner, slotSpawn.transform);
                 partySpawn.GetComponent<PartySpawner>().npcType = partyManager.partyList[i];
-                partySpawn.transform.position = slotSpawn.transform.position;
+                partySpawn.GetComponent<RectTransform>().anchoredPosition = new Vector3(50, -50, 0);
             }
         }
     }
