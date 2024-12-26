@@ -41,9 +41,6 @@ TagManager:
   - name: Background
     uniqueID: 3365089853
     locked: 0
-  - name: BackgroundObjects
-    uniqueID: 1271925331
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
