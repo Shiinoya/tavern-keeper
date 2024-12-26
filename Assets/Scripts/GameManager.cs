@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,7 +20,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // if mouse left click
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonDown(0))
+
         {
             Vector2 mousePosition2D = Camera.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(mousePosition2D, Vector2.zero);
@@ -69,6 +71,11 @@ public class GameManager : MonoBehaviour
                 selectedUnit.Move(mousePosition2D);
             }
         }
+    }
+
+    public void QuestScene()
+    {
+        SceneManager.LoadScene(1);
     }
 
 
