@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,6 +20,8 @@ public class LevelManager : MonoBehaviour
     public GameObject slotSection;
 
     private PartyManager partyManager;
+
+    private float loadTimer = 3f;
 
     private void Start()
     {
@@ -44,7 +47,11 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
-        if (enemyList.Count <= 0 && treasureList.Count <= 0)
+        //temp fix for ending level straight away
+        if(loadTimer > 0)
+            loadTimer -= Time.deltaTime;
+
+        if (enemyList.Count <= 0 && treasureList.Count <= 0 && loadTimer <= 0)
         {
             Debug.Log("Complete");
             uiAni.SetBool("LevelComplete", true);
