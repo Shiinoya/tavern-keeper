@@ -19,9 +19,9 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-
         // if mouse left click
         if (Input.GetMouseButtonDown(0))
+
         {
             Vector2 mousePosition2D = Camera.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(mousePosition2D, Vector2.zero);
