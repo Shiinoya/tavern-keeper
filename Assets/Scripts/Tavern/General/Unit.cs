@@ -15,7 +15,7 @@ public class Unit : MonoBehaviour
         selectedUnit.SetActive(false);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (isMoving)
         {
