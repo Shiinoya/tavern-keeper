@@ -753,6 +753,93 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3da6819996ec0a518ab7310eaa2a5e21, type: 3}
+--- !u!1 &392427369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 392427371}
+  - component: {fileID: 392427370}
+  m_Layer: 0
+  m_Name: A*
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &392427370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392427369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAACIn+tEtQZUXAIAABUFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE2P2jAQ/SvI57JKEAtLby2wbA8saOlqL7k48YRYOHZkO3yK/96xk5A0VU+Y997MvBmPcyNcmgISq/RKc7ZWDMj3AXFn8m3Qkm9wpnsld/wKjeaLM5s5EfWaD2q5Qjx0YUblYDVPfsi9cOIAwVLyVOl8yfYwV8YahFMqDCCllXXREqHbgJzxZzhzIRc8jabudMXTLBjc8ZiAtKBbaSNsZJWqlImgeQHMWW7F4fTpudaHlVBiO7Um8FyihOCmdkPspfDd7ooMNLh2GafYnHcQPE0QyIDvM+usdqM3aWrA1r40vSy4xilVaclPVY0up+ZQmTtSUbpCoTdVpVz/ww4rOtUqf2uqhoGrYDOeHD7oJaHGdibbhRet8dBP6ETFgcYCvjKQ72qlVSkZklaXLrQ0MFq0fx+NzTNIDi1eWe2BZfH/+3E93H3v57ngeeznOK6AnVB+3P72QePV/ELDfjdMnQJR5+LTwG+67y5RTbxybSxSdZfS2YtVqZ2ULP3MXDelnSstwcO16QIkFfayxTS2f4E9rlO2x7xS91zq4jXXvIJeiIdbfRD0qK06PS7LZOq0BpNtSiu4hNa0I95xTnMlZbVf3Zk0YbtSpzTphO1Lzv5eLRKPg1H8Mnl+gQkdB7PZEJJJGqcxTYNwTNl0QvzucYl9UrGtjNbjwVuTbXKJe9Z8RQYrTQu/60zT04pfc9UZOZep2iUaQG6qDA/joLEIPku2ZBwHtANrufT3TW4RESo5AIseiSLf6fJsNY3aLBEp+FFZh0Rk7j8bEXHwY5e3Go4cTq54k+xO7n8AUEsDBBQAAAgIAACIn+vSzes8bQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRSkomBUZKFmalFqlmiiYGlpW5qsllaUlpSYpqBoUliirmZUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACIn+tEtQZUXAIAABUFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACIn+vSzes8bQAAAHgAAAAJACQAAAAAAAAAAAAAAKkCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAYQMAAAAA
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames: []
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 1
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
+--- !u!4 &392427371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392427369}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.110017, y: -5.29463, z: -0.018039374}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &401763645 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2575327019950379618, guid: 3da6819996ec0a518ab7310eaa2a5e21, type: 3}
@@ -2775,3 +2862,4 @@ SceneRoots:
   - {fileID: 1479619365}
   - {fileID: 1194518977}
   - {fileID: 1599780010}
+  - {fileID: 392427371}
