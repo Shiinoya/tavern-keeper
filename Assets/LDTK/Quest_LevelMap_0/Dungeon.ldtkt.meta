@@ -25,10 +25,10 @@ ScriptedImporter:
     spriteID: ad48360308f724c4dac93ad81c595402
     spriteOutline:
     - shape:
-      - {x: -8, y: -8}
-      - {x: -8, y: 8}
-      - {x: 8, y: 8}
-      - {x: 8, y: -8}
+      - {x: -4, y: -4}
+      - {x: -4, y: 4}
+      - {x: 4, y: 4}
+      - {x: 4, y: -4}
     tessellationDetail: 0
   - name: Dungeon_1
     originalName: 
@@ -44,10 +44,10 @@ ScriptedImporter:
     spriteID: f54b8b23e696de945b23e03d795c8509
     spriteOutline:
     - shape:
-      - {x: -8, y: -8}
-      - {x: -8, y: 8}
-      - {x: 8, y: 8}
-      - {x: 8, y: -8}
+      - {x: -4, y: -4}
+      - {x: -4, y: 4}
+      - {x: 4, y: 4}
+      - {x: 4, y: -4}
     tessellationDetail: 0
   - name: Dungeon_2
     originalName: 
@@ -63,10 +63,10 @@ ScriptedImporter:
     spriteID: 9c579a997eaa7174b895992ad82a725d
     spriteOutline:
     - shape:
-      - {x: -8, y: -8}
-      - {x: -8, y: 8}
-      - {x: 8, y: 8}
-      - {x: 8, y: -8}
+      - {x: -4, y: -4}
+      - {x: -4, y: 4}
+      - {x: 4, y: 4}
+      - {x: 4, y: -4}
     tessellationDetail: 0
   - name: Dungeon_3
     originalName: 
@@ -150,7 +150,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: 336341f603c832f44b1bff379c7020f5
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: -4}
+      - {x: -4, y: 4}
+      - {x: 4, y: 4}
+      - {x: 4, y: -4}
     tessellationDetail: 0
   - name: Dungeon_9
     originalName: 
@@ -164,7 +169,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: ae46931d7c86dc448876c71aa7fd1589
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: -4}
+      - {x: -4, y: 4}
+      - {x: 4, y: 4}
+      - {x: 4, y: -4}
     tessellationDetail: 0
   - name: Dungeon_10
     originalName: 
@@ -178,7 +188,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: b413c0e96eedea34481772fc123d5adc
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: -4}
+      - {x: -4, y: 4}
+      - {x: 4, y: 4}
+      - {x: 4, y: -4}
     tessellationDetail: 0
   - name: Dungeon_11
     originalName: 
@@ -262,7 +277,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: 5fb85917fb6b74847ae0a9105909804f
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: -4}
+      - {x: -4, y: 4}
+      - {x: 4, y: 4}
+      - {x: 4, y: -4}
     tessellationDetail: 0
   - name: Dungeon_17
     originalName: 
@@ -276,7 +296,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: 4bca00b2fcf49a94d90d7a359e4633f2
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: -4}
+      - {x: -4, y: 4}
+      - {x: 4, y: 4}
+      - {x: 4, y: -4}
     tessellationDetail: 0
   - name: Dungeon_18
     originalName: 
@@ -290,7 +315,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: c0a86278770e1214898d95d33bf0979c
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: -4}
+      - {x: -4, y: 4}
+      - {x: 4, y: 4}
+      - {x: 4, y: -4}
     tessellationDetail: 0
   - name: Dungeon_19
     originalName: 
@@ -374,7 +404,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: 285e92df28c3449409982f18cdc11a3f
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: 4}
+      - {x: -4, y: -4}
+      - {x: 4, y: -4}
+      - {x: 4, y: 4}
     tessellationDetail: 0
   - name: Dungeon_25
     originalName: 
@@ -390,10 +425,10 @@ ScriptedImporter:
     spriteID: 97c8aab3c96a88946a00e2a765303169
     spriteOutline:
     - shape:
-      - {x: -8, y: -8}
-      - {x: -8, y: 8}
-      - {x: 8, y: 8}
-      - {x: 8, y: -8}
+      - {x: -4, y: -4}
+      - {x: -4, y: 4}
+      - {x: 4, y: 4}
+      - {x: 4, y: -4}
     tessellationDetail: 0
   - name: Dungeon_26
     originalName: 
@@ -409,10 +444,10 @@ ScriptedImporter:
     spriteID: 3d3a81cfde0d1b3429285f4843df4e27
     spriteOutline:
     - shape:
-      - {x: -8, y: -8}
-      - {x: -8, y: 8}
-      - {x: 8, y: 8}
-      - {x: 8, y: -8}
+      - {x: -4, y: -4}
+      - {x: -4, y: 4}
+      - {x: 4, y: 4}
+      - {x: 4, y: -4}
     tessellationDetail: 0
   - name: Dungeon_27
     originalName: 
@@ -501,7 +536,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: 9e3f35497e778df4c976f3e4c42cfb3b
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: 4}
+      - {x: -4, y: -4}
+      - {x: 4, y: -4}
+      - {x: 4, y: 4}
     tessellationDetail: 0
   - name: Dungeon_33
     originalName: 
@@ -515,7 +555,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: 1a33d89cb17002547a3af234c1d64a53
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: 4}
+      - {x: -4, y: -4}
+      - {x: 4, y: -4}
+      - {x: 4, y: 4}
     tessellationDetail: 0
   - name: Dungeon_34
     originalName: 
@@ -529,7 +574,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: aa80c6f450b73314ab097d2e7a467af9
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: 4}
+      - {x: -4, y: -4}
+      - {x: 4, y: -4}
+      - {x: 4, y: 4}
     tessellationDetail: 0
   - name: Dungeon_35
     originalName: 
@@ -613,7 +663,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: a28fafdf0683eea43938c82fc12898cd
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: 4}
+      - {x: -4, y: -4}
+      - {x: 4, y: -4}
+      - {x: 4, y: 4}
     tessellationDetail: 0
   - name: Dungeon_41
     originalName: 
@@ -627,7 +682,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: 953d03d945a47e34ca63bf14125406a4
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: 4}
+      - {x: -4, y: -4}
+      - {x: 4, y: -4}
+      - {x: 4, y: 4}
     tessellationDetail: 0
   - name: Dungeon_42
     originalName: 
@@ -641,7 +701,12 @@ ScriptedImporter:
       width: 8
       height: 8
     spriteID: bf65ac9eb338edb469a91bea0253d9c5
-    spriteOutline: []
+    spriteOutline:
+    - shape:
+      - {x: -4, y: 4}
+      - {x: -4, y: -4}
+      - {x: 4, y: -4}
+      - {x: 4, y: 4}
     tessellationDetail: 0
   - name: Dungeon_43
     originalName: 
