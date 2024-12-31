@@ -1,4 +1,5 @@
 using UnityEngine;
+using Pathfinding;
 
 public class Unit : MonoBehaviour
 {
@@ -20,11 +21,6 @@ public class Unit : MonoBehaviour
         if (isMoving)
         {
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-        }
-
-        if (transform.position == (Vector3)targetPosition)
-        {
-            isMoving = false;
         }
     }
 
