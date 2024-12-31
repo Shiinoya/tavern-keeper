@@ -19,7 +19,11 @@ ScriptedImporter:
   _createLevelBoundsTrigger: 0
   _useParallax: 1
   _intGridValues:
-  - _key: Dungeon_1
+  - _key: DungeonWalls_1
+    _asset: {instanceID: 0}
+  - _key: DungeonTiles_1
+    _asset: {instanceID: 0}
+  - _key: GroundAuto_1
     _asset: {instanceID: 0}
   _entities: []
   _enumGenerate: 0

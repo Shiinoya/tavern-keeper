@@ -75,7 +75,19 @@ public class GameManager : MonoBehaviour
 
     public void QuestScene()
     {
-        SceneManager.LoadScene(1);
+
+        FindObjectOfType<PartyManager>().UpdatePartyList();
+
+        int partyCount = 0;
+
+        for (int i = 0; i < FindObjectOfType<PartyManager>().partyList.Length; i++)
+        {
+            if (FindObjectOfType<PartyManager>().partyList[i] != null)
+                partyCount++;
+        }
+
+        if(partyCount > 0)
+            SceneManager.LoadScene(1);
     }
 
 

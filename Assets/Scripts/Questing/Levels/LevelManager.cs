@@ -53,7 +53,6 @@ public class LevelManager : MonoBehaviour
 
         if (enemyList.Count <= 0 && treasureList.Count <= 0 && loadTimer <= 0)
         {
-            Debug.Log("Complete");
             uiAni.SetBool("LevelComplete", true);
         }
     }

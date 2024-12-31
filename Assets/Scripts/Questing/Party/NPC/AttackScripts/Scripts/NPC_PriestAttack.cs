@@ -21,6 +21,7 @@ public class NPC_PriestAttack : NPC_AdventurerAttack
     public override void StartAttack()
     {
         levelManager = FindObjectOfType<LevelManager>();
+        thisAdventurer.GetComponent<Animator>().SetInteger("NPCType", 2);
     }
 
     public override void UpdateAttack()
@@ -83,6 +84,7 @@ public class NPC_PriestAttack : NPC_AdventurerAttack
 
     public void AttackTarget()
     {
+        thisAdventurer.GetComponent<Animator>().SetTrigger("Attack");
         aTarget.currentTarget.GetComponent<HitPointManager>().EffectHealth(attackDamge);
     }
 }

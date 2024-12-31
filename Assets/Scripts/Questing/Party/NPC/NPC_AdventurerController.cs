@@ -15,7 +15,7 @@ public class NPC_AdventurerController : MonoBehaviour
         npcAttack.aTarget = aTarget;
         npcAttack.thisAdventurer = gameObject;
         npcAttack.StartAttack();
-        gameObject.GetComponentInChildren<SpriteRenderer>().color = npcAttack.aColor;
+        gameObject.GetComponentInChildren<SpriteRenderer>().sprite = npcAttack.aSprite;
     }
 
     private void Update()
@@ -25,7 +25,8 @@ public class NPC_AdventurerController : MonoBehaviour
 
     private void OnDestroy()
     {
-        FindObjectOfType<LevelManager>().partyList.Remove(gameObject);
+        if (FindObjectOfType<LevelManager>() != null)
+            FindObjectOfType<LevelManager>().partyList.Remove(gameObject);
     }
 
 }

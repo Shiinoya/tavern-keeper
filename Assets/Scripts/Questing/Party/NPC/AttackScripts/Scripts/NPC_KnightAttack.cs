@@ -15,7 +15,7 @@ public class NPC_KnightAttack : NPC_AdventurerAttack
 
     public override void StartAttack()
     {
-        
+        thisAdventurer.GetComponent<Animator>().SetInteger("NPCType", 0);
     }
 
     public override void UpdateAttack()
@@ -55,6 +55,7 @@ public class NPC_KnightAttack : NPC_AdventurerAttack
 
     public void AttackTarget()
     {
+        thisAdventurer.GetComponent<Animator>().SetTrigger("Attack");
         aTarget.currentTarget.GetComponent<HitPointManager>().EffectHealth(attackDamge);
     }
 }
